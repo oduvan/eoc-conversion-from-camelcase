@@ -1,0 +1,53 @@
+<!-- Describe task in general -->
+
+<p>
+    Ваша задача - написать функцию, которая преобразовывает текст (название другой функции) из формата CamelCase, принятого в JavaScript (MyFunctionName) в формат, принятый в Python (my_function_name), где все буквы - маленькие, а слова соединены знаком нижнего подчеркивания "_".
+</p>
+
+<!--<p style="text-align: center;">
+    <img  title="From CamelCase" src="{{MEDIA}}example.png" alt="example" style="max-height: 283px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Входные данные: </strong> Название функции как строка в CamelCase
+</p>
+
+<p>
+    <strong>Output: </strong> То же самое название, но в under_score
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Примеры:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">fromCamelCase("MyFunctionName") == "my_function_name"
+fromCamelCase("IPhone") == "i_phone"
+fromCamelCase("ThisFunctionIsEmpty") == "this_function_is_empty"
+fromCamelCase("Name") == "name"
+</pre>
+{% else %}
+<pre class="brush: python">from_camel_case("MyFunctionName") == "my_function_name"
+from_camel_case("IPhone") == "i_phone"
+from_camel_case("ThisFunctionIsEmpty") == "this_function_is_empty"
+from_camel_case("Name") == "name"
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Как это используется: </strong>
+    Чтобы применять названия функций в том стиле, в каком они приняты в определенном языке (Python, JavaScript, и т.д.).
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Предусловия</strong>:<br>
+    0 < len(string) <= 100<br>
+    Во входящих данных не будет чисел или пустых строк<br>
+</p>
