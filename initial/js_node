@@ -1,8 +1,8 @@
-
-export function fromCamelCase(name) {
+export function fromCamelCase(name: string): string {
     // your code here
     return name;
 }
+
 
 import * as assert from 'assert';
 console.log('Example:')
